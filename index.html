@@ -38,7 +38,7 @@
                 font-size: 3.5rem;
             }
         }
-
+        
         .b-example-divider {
             width: 100%;
             height: 3rem;
@@ -101,6 +101,12 @@
         .bd-mode-toggle .dropdown-menu .active .bi {
             display: block !important;
         }
+
+        .carousel-item img{
+            object-fit: cover;
+            object-position: center;
+            height: 50vh;
+        }
     </style>
 
 </head>
@@ -111,14 +117,17 @@
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
             <div class="container-fluid">
                 <a href="https://bobby58.github.io/arty/" class="text-decoration-none"><h1 class="navbar-brand">Law Office of Anthony R. Tirone, Esq., P.L.L.C.</h1></a>
-                <span class="text-white">170 Hamilton Avenue, Suite 300, White Plains, NY      Tel:(914) 686-7007 </span>
+                <span class="d-flex navbar-text text-white">
+                    <p class="me-4">170 Hamilton Avenue, Suite 300, White Plains, NY 10601</p>      
+                    <p class="me-4">Tel:(914) 686-7007</p> 
+                </span>
             </div>
         </nav>
     </header>
 
     <main>
 
-        <div id="myCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+        <div id="myCarousel" class="carousel slide mb-0" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -128,13 +137,10 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Personal Injury</h1>
-                            <h1>Work Accident</h1>
-                            <h1>Wrongful Death</h1>
-                            <p class="opacity-75">We are a highly successful personal injury law form with thousands of
-                                satisfied clients. You will be our friend and best parner in this journey to pursue
-                                justice and just compensation for your damages. </p>
+                        <div class="carousel-caption">
+                            <h1>Injury from accident, work, or medical procedure</h1>
+                            <p>We are a highly successful personal injury law form with thousands of
+                                satisfied clients. </p>
                         </div>
                     </div>
                     <img src="home1.jpg" style="width:100%">
@@ -151,8 +157,8 @@
                 </div>
                 <div class="carousel-item">
                     <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>Real Estate</h1>
+                        <div class="carousel-caption">
+                            <h1>Real Estate transactions and regulatory compliance</h1>
                             <p>We are an expert in all matters in Westchester County real estate.</p>
                         </div>
                     </div>
